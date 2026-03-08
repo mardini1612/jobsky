@@ -15,7 +15,7 @@ else:
 response = model.generate_content(prompt)
 return response.text
 except Exception as e:
-return “خطأ: “ + str(e)
+return "خطأ: " + str(e)
 
 st.set_page_config(page_title=“JobSky”, page_icon=“☁️”, layout=“centered”)
 
