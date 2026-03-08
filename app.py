@@ -4,7 +4,7 @@ import PyPDF2
 from PIL import Image
 import time
 
-genai.configure(api_key=“AIzaSyAJa-ev3_uh8CJqY7odjC_47FfVh_pGuXQ”)
+genai.configure(api_key="AIzaSyAJa-ev3_uh8CJqY7odjC_47FfVh_pGuXQ")
 
 def ask_ai(prompt, image=None):
 try:
