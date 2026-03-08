@@ -6,7 +6,7 @@ import io
 import base64
 import time
 
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "AIzaSyAJa-ev3_uh8CJqY7odjC_47FfVh_pGuXQ"
 
 def ask_ai(prompt):
     try:
@@ -14,7 +14,7 @@ def ask_ai(prompt):
             url="https://openrouter.ai/api/v1/chat/completions",
             headers={"Authorization": "Bearer " + OPENROUTER_API_KEY},
             json={
-                "model": "google/gemini-2.0-flash-exp:free",
+                "model": "gemini-1.5-flash",
                 "messages": [{"role": "user", "content": prompt}]
             }
         )
