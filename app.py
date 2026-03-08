@@ -9,7 +9,7 @@ genai.configure(api_key="AIzaSyAJa-ev3_uh8CJqY7odjC_47FfVh_pGuXQ")
 
 def ask_ai(prompt, image=None):
     try:
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("gemini-1.5-flash-latest")
         if image:
             response = model.generate_content([prompt, image])
         else:
